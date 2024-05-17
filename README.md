@@ -16,3 +16,15 @@ RapidApiGetHourlyForecastByLocationName)
 
 
  ----- For both the api, i have managed to implemeit with single endpoint. 
+
+ Curl for RapidApiGetForecastSummaryByLocationName : 
+
+ curl --location 'http://localhost:8081/forecast/Berlin/summary/' \
+--header 'X-RapidAPI-Key: 802fc4bed7mshe0a21adde9896efp195faejsn4924c071b798' \
+--header 'X-RapidAPI-Host: forecast9.p.rapidapi.com'
+
+Curl for RapidApiGetHourlyForecastByLocationName
+
+curl --location 'http://localhost:8081/forecast/Berlin/hourly/' \
+--header 'X-RapidAPI-Key: 802fc4bed7mshe0a21adde9896efp195faejsn4924c071b798' \
+--header 'X-RapidAPI-Host: forecast9.p.rapidapi.com'
