@@ -44,14 +44,13 @@ public class GlobalExceptionHandler {
     private String getMessage(String errorMessage) {
         String[] parts = errorMessage.split(":");
 
-        // Get the second part, which contains the JSON
+        
         String jsonPart = parts[2].trim();
 
-        // Remove "{" from the beginning and "}" from the end
+        
         jsonPart = jsonPart.replaceAll("[^a-zA-Z0-9\\s]", "");
 
-        // Parse the JSON to get the message
-        //String message = jsonPart.split("\"")[3];
+        
         return jsonPart;
     }
 }
